@@ -22,7 +22,7 @@ def load_words(letters):
 
     all_words = read_csv("dictionary.csv")
 
-    valid_letters = set(letters)
+    valid_letters = set(letters.lower())
     valid_words = []
     for word in all_words:
 
